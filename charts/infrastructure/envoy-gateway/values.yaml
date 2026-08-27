@@ -17,4 +17,4 @@ routes:
     staticIP: "192.168.1.51"
     backendNamespace: "adguard"
     backendServiceName: "adguard"
-    backendServicePort: 3000
+    backendServicePort: 80
