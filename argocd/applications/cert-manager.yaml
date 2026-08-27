@@ -1,7 +1,7 @@
-apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v2alpha1
 kind: Application
 metadata:
-  name: adguard
+  name: cert-manager
   namespace: argocd
   labels:
     category: infra
@@ -10,13 +10,13 @@ spec:
   source:
     repoURL: https://github.com/rverspaij/homelab
     targetRevision: main
-    path: charts/infrastructure/adguard
+    path: charts/infrastructure/cert-manager
     helm:
       valueFiles:
         - values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: adguard
+    namespace: cert-manager
   syncPolicy:
     automated:
       prune: true
