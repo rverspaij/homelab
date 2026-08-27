@@ -1,0 +1,9 @@
+image:
+  repository: rancher/local-path-provisioner
+  tag: v0.0.30
+
+nodePath: /var/local-path-provisioner
+
+storageClass:
+  name: local-path
+  isDefault: true
