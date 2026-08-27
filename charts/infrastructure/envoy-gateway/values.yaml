@@ -21,3 +21,9 @@ routes:
     backendNamespace: "adguard"
     backendServiceName: "adguard"
     backendServicePort: 80
+  - name: immich
+    hostname: immich.homelab
+    staticIP: "192.168.1.54"
+    backendNamespace: immich
+    backendServiceName: immich-server
+    backendServicePort: 2283
