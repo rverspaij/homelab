@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: envoy-gateway
+  name: local-path-provisioner
   namespace: argocd
   labels:
     category: infra
@@ -10,17 +10,16 @@ spec:
   source:
     repoURL: https://github.com/rverspaij/homelab
     targetRevision: main
-    path: charts/infrastructure/envoy-gateway
+    path: charts/infrastructure/local-path-provisioner
     helm:
       valueFiles:
         - values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: envoy-gateway-system
+    namespace: local-path-storage
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-      - ServerSideApply=true
