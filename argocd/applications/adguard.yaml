@@ -18,6 +18,11 @@ spec:
     server: https://kubernetes.default.svc
     namespace: adguard
   syncPolicy:
+    managedNamespaceMetadata:
+      labels:
+        pod-security.kubernetes.io/enforce: privileged
+    syncOptions:
+      - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true
