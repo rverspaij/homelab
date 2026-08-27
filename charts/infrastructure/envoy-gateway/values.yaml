@@ -8,3 +8,8 @@ routes:
     backendNamespace: argocd
     backendServiceName: argocd-server
     backendServicePort: 80
+  - name: longhorn
+    staticIP: "192.168.1.51"
+    backendNamespace: longhorn-system
+    backendServiceName: longhorn-frontend
+    backendServicePort: 80
