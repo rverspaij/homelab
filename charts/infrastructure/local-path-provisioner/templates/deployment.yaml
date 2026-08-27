@@ -19,7 +19,6 @@ spec:
           imagePullPolicy: IfNotPresent
           command:
             - local-path-provisioner
-            - --provisioner-name=rancher.io/local-path
             - start
             - --config=/etc/config/config.json
           volumeMounts:
