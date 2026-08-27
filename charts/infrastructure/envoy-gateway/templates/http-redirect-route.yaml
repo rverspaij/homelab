@@ -8,6 +8,8 @@ spec:
   parentRefs:
     - name: {{ .name }}-gateway
       namespace: envoy-gateway-system
+  hostnames:
+    - {{ .hostname }}
   rules:
     - backendRefs:
         - name: {{ .backendServiceName }}
