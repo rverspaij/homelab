@@ -1,3 +1,10 @@
 gateway-helm:
   service:
     type: ClusterIP
+
+routes:
+  - name: argocd
+    staticIP: "192.168.1.50"
+    backendNamespace: argocd
+    backendServiceName: argocd-server
+    backendServicePort: 80
