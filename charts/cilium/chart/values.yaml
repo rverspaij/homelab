@@ -36,9 +36,3 @@ cilium:
 
   l2announcements:
     enabled: true
-
-  gatewayAPI:
-    enabled: true
-
-  operator:
-    replicas: 2

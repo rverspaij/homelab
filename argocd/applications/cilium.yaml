@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/rverspaij/homelab
     targetRevision: main
-    path: charts/infrastructure/cilium/chart
+    path: charts/cilium/chart
     helm:
       valueFiles:
         - values.yaml
