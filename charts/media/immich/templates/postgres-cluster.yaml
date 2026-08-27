@@ -21,7 +21,7 @@ spec:
   managed:
     roles:
       - name: immich
-        superuser: false
+        superuser: true
         login: true
         passwordSecret:
           name: immich-postgres-user
