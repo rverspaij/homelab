@@ -1,0 +1,10 @@
+apiVersion: v2
+name: service-gateway
+description: Per-service Envoy Gateway with a dedicated Cilium L2 IP
+type: application
+version: 0.1.0
+
+dependencies:
+  - name: gateway-helm
+    version: 1.8.3
+    repository: oci://docker.io/envoyproxy
