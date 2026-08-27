@@ -4,13 +4,13 @@ metadata:
   name: longhorn
   namespace: argocd
   labels:
-    category: infra
+    category: storage
 spec:
   project: default
   source:
     repoURL: https://github.com/rverspaij/homelab
     targetRevision: main
-    path: charts/infrastructure/longhorn
+    path: charts/storage/longhorn
     helm:
       valueFiles:
         - values.yaml
