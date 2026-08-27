@@ -1,3 +1,6 @@
 longhorn:
   defaultSettings:
     defaultDataPath: /var/lib/longhorn
+
+  preUpgradeChecker:
+    jobEnabled: false
