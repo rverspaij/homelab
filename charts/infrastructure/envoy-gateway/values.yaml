@@ -63,3 +63,9 @@ routes:
     backendNamespace: "media"
     backendServiceName: "seerr"
     backendServicePort: 5055
+  - name: bazarr
+    hostname: bazarr.homelab
+    staticIP: "192.168.1.61"
+    backendNamespace: "media"
+    backendServiceName: "bazarr"
+    backendServicePort: 6767
