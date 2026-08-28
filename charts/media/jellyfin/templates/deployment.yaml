@@ -12,6 +12,8 @@ spec:
       labels:
         app: jellyfin
     spec:
+      securityContext:
+        fsGroup: 1000
       containers:
         - name: jellyfin
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
