@@ -27,3 +27,9 @@ routes:
     backendNamespace: immich
     backendServiceName: immich-server
     backendServicePort: 2283
+  - name: jellyfin
+    hostname: jellyfin.homelab
+    staticIP: "192.168.1.55"
+    backendNamespace: "media"
+    backendServiceName: "jellyfin"
+    backendServicePort: 8096
