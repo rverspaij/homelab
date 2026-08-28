@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: media-server
+  name: jellyfin
   namespace: argocd
   labels:
     category: media
@@ -10,7 +10,10 @@ spec:
   source:
     repoURL: https://github.com/rverspaij/homelab
     targetRevision: main
-    path: charts/media/media-server
+    path: charts/media/jellyfin
+    helm:
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: media
