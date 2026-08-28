@@ -33,3 +33,33 @@ routes:
     backendNamespace: "media"
     backendServiceName: "jellyfin"
     backendServicePort: 8096
+  - name: sabnzbd
+    hostname: sabnzbd.homelab
+    staticIP: "192.168.1.56"
+    backendNamespace: "media"
+    backendServiceName: "sabnzbd"
+    backendServicePort: 8080
+  - name: prowlarr
+    hostname: prowlarr.homelab
+    staticIP: "192.168.1.57"
+    backendNamespace: "media"
+    backendServiceName: "prowlarr"
+    backendServicePort: 9696
+  - name: radarr
+    hostname: radarr.homelab
+    staticIP: "192.168.1.58"
+    backendNamespace: "media"
+    backendServiceName: "radarr"
+    backendServicePort: 7878
+  - name: sonarr
+    hostname: sonarr.homelab
+    staticIP: "192.168.1.59"
+    backendNamespace: "media"
+    backendServiceName: "sonarr"
+    backendServicePort: 8989
+  - name: seerr
+    hostname: seerr.homelab
+    staticIP: "192.168.1.60"
+    backendNamespace: "media"
+    backendServiceName: "seerr"
+    backendServicePort: 5055
