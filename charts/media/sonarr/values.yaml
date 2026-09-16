@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/sonarr
-  tag: "4.0.19"
+  tag: "4.0.20"
 
 puid: "1000"
 pgid: "1000"
