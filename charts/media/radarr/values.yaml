@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/radarr
-  tag: "6.3.0"
+  tag: "6.4.4"
 
 puid: "1000"
 pgid: "1000"
